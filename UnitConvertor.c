@@ -29,19 +29,19 @@ int main() {
       printf("Enter 2 for Celsius to Fahrenheit. \n");
       scanf("%d", &tempChoice);
       if(tempChoice == 1){
-          printf("Please enter the temperate in Fahrenheit: \n");
+          printf("Please enter the temperature in Fahrenheit: \n");
           scanf("%d", &userinputF);
           farenheittocelsius =  ((userinputF-32) * (5.0/9.0));
-          printf("Celcius: %d",farenheittocelsius);
+          printf("Celcius: %d", farenheittocelsius);
       }
       else if(tempChoice == 2){
         printf("Please enter the temperature in Celsius: \n");
-        scanf("%d",&userinputC);
+        scanf("%d", &userinputC);
         celsiustofarenheit = ((9.0/5.0)*userinputC + 32);
         printf("Fahrenheit: %d", celsiustofarenheit);
       }
       else
-        printf("Please enter the correct choice. \n");
+        printf("Please enter either 1 or 2. \n");
   }
   
   else if(category == 'C') {
@@ -52,7 +52,7 @@ int main() {
           printf("Please enter the USD amount: \n");
           scanf("%d", &userinputUSDtoINR);
           USDtoINR = userinputUSDtoINR * 95.94;
-          printf("INR: %.2f",USDtoINR); // %.2f = rounds the float to only 2 decimal places;
+          printf("INR: %.2f", USDtoINR); // %.2f = rounds the float to only 2 decimal places;
       }
       else if(currencyChoice == 2){
           printf("Please enter the INR amount: \n");
@@ -61,27 +61,27 @@ int main() {
           printf("USD: %.2f",INRtoUSD);
       }
       else
-        printf("Please enter correct choice. \n");
+        printf("Please enter either 1 or 2. \n");
   }
 
   else if(category == 'M'){
       printf("Enter 1 for kilos to pounds. \n");
       printf("Enter 2 for pounds to kilos. \n");
-      scanf("%d",&massChoice);
+      scanf("%d", &massChoice);
       if(massChoice == 1){
           printf("Please enter the mass in kilos: \n");
-          scanf("%d",&userinputkilos);
+          scanf("%d", &userinputkilos);
           kilostopounds = userinputkilos * 2.205;
           printf("Pounds: %.2f", kilostopounds);
       }
       else if(massChoice == 2) {
           printf("Please enter the mass in pounds: \n");
-          scanf("%d",&userinputpounds);
+          scanf("%d", &userinputpounds);
           poundstokilos = userinputpounds * 0.454;
-          printf("Kilos: %.2f",poundstokilos);
+          printf("Kilos: %.2f", poundstokilos);
       }
       else 
-        printf("Please enter the correct choice. \n");
+        printf("Please enter either 1 or 2. \n");
    }
   return 0;
 }
